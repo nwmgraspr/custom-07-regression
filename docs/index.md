@@ -33,12 +33,6 @@ The workflow includes:
 5. Generating predictions
 6. Evaluating model performance
 
-The regression model follows:
-
-[
-Tip = \beta_1(Total\ Bill) + \beta_0
-]
-
 ## Evaluation Metrics
 
 The model is assessed using:
