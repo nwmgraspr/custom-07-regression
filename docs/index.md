@@ -17,11 +17,6 @@ Understanding this relationship helps evaluate whether bill size alone is a usef
 
 **Source:** Seaborn Tips Dataset
 
-The analysis uses:
-
-* **Feature (X):** `total_bill`
-* **Target (y):** `tip`
-
 ## Methodology
 
 The workflow includes:
