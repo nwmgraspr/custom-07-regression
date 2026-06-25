@@ -301,7 +301,10 @@ def main() -> None:
     plt.show()
 
     LOG.info("Regression workflow complete")
-
+    
+    LOG.info("========================")
+    LOG.info("Executed successfully!")
+    LOG.info("========================")
 
 # === Execution Guard ===
 
