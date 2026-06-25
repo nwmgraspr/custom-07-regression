@@ -1,9 +1,7 @@
-# app_tips_case.py
-
 """
 app_tips_case.py
 
-Author:
+Author: Ralph Massaquoi
 Date: 2026-06
 
 
