@@ -136,36 +136,39 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 ## Example Output
 
 ```shell
-| INFO | P07 | ========================
-| INFO | P07 | Dataset: owid-co2-data-subset
-| INFO | P07 | Feature (x): gdp
-| INFO | P07 | Target  (y): co2
-| INFO | P07 | Original rows: 350
-| INFO | P07 | Model rows:    308
-| INFO | P07 | Fitted line:
-| INFO | P07 |   co2 = 3.21582e-10 * gdp + 308.446
-| INFO | P07 | ======================
-| INFO | P07 | Review the fit numbers (R-squared, RMSE).
-| INFO | P07 | Look at the fitted-line plot and the residual plot.
-| INFO | P07 | Decide whether a straight line is a fair description here.
-| INFO | P07 | If the residuals show a pattern, a straight line is not -
-| INFO | P07 | and that is a real finding worth reporting.
-| INFO | P07 | ======================
-| INFO | P07 | Repeat with a different feature, or a transformed feature,
-| INFO | P07 | to investigate other angles.
-| INFO | P07 | ======================
-| INFO | P07 | Include instructions and specifics in your README.md file.
-| INFO | P07 | Write up your narrative on your docs/index.md file.
-| INFO | P07 | Include your next step suggestions for further analysis or modeling.
-| INFO | P07 | ======================
-| INFO | P07 | ----- in a script, call plt.show() once at the end to display all charts -----
-| INFO | P07 | ----- in a script, close the chart windows (with the close button) to continue  -----
-| INFO | P07 | Linear regression workflow complete
-| INFO | P07 | IMPORTANT: This script creates chart windows.
-| INFO | P07 | Close any chart windows and terminate this process with CTRL+c as needed.
-| INFO | P07 | ========================
-| INFO | P07 | Executed successfully!
-| INFO | P07 | ========================
+2026-06-25 00:05:16 | INFO | P07 | Correlation between total_bill and tip: 0.6757
+2026-06-25 00:05:16 | INFO | P07 | Creating modeling view
+2026-06-25 00:05:16 | INFO | P07 | Original rows: 244
+2026-06-25 00:05:16 | INFO | P07 | Model rows: 244
+2026-06-25 00:05:16 | INFO | P07 | Rows dropped: 0
+2026-06-25 00:05:16 | DEBUG | P07 | X shape: (244, 1)
+2026-06-25 00:05:16 | DEBUG | P07 | y shape: (244,)
+2026-06-25 00:05:16 | INFO | P07 | Fitting linear regression model
+2026-06-25 00:05:16 | INFO | P07 | Regression Equation:
+2026-06-25 00:05:16 | INFO | P07 | tip = 0.105025 * total_bill + 0.920270
+2026-06-25 00:05:16 | INFO | P07 | Predicted tip for a bill of $50.00: $6.17
+2026-06-25 00:05:16 | INFO | P07 | ====================
+2026-06-25 00:05:16 | INFO | P07 | MODEL EVALUATION
+2026-06-25 00:05:16 | INFO | P07 | ====================
+2026-06-25 00:05:16 | INFO | P07 | R-squared: 0.4566
+2026-06-25 00:05:16 | INFO | P07 | RMSE: 1.0179
+2026-06-25 00:05:16 | INFO | P07 | Residual Min: -3.1982
+2026-06-25 00:05:16 | INFO | P07 | Residual Max: 3.7434
+2026-06-25 00:05:16 | INFO | P07 | Residual Mean: 0.0000
+2026-06-25 00:05:17 | INFO | P07 | ====================
+2026-06-25 00:05:17 | INFO | P07 | SUMMARY
+2026-06-25 00:05:17 | INFO | P07 | ====================
+2026-06-25 00:05:17 | INFO | P07 | Dataset: tips
+2026-06-25 00:05:17 | INFO | P07 | Feature: total_bill
+2026-06-25 00:05:17 | INFO | P07 | Target: tip
+2026-06-25 00:05:17 | INFO | P07 | Original Rows: 244
+2026-06-25 00:05:17 | INFO | P07 | Model Rows: 244
+2026-06-25 00:05:17 | INFO | P07 | Regression Equation: tip = 0.105025 * total_bill + 0.920270
+2026-06-25 00:05:17 | INFO | P07 | Interpret the R-squared, RMSE, and residual plots to determine whether a linear model is appropriate.
+2026-06-25 00:05:33 | INFO | P07 | Regression workflow complete
+2026-06-25 00:05:33 | INFO | P07 | ========================
+2026-06-25 00:05:33 | INFO | P07 | Executed successfully!
+2026-06-25 00:05:33 | INFO | P07 | ========================
 ```
 
 ## Findings and Visuals
