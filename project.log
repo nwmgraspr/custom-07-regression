@@ -1,0 +1,8 @@
+2026-06-24 22:43:25 | INFO | P07 | === RUN START ===
+2026-06-24 22:43:25 | INFO | P07 | project=P07
+2026-06-24 22:43:25 | INFO | P07 | repo_dir=custom-07-regression
+2026-06-24 22:43:25 | INFO | P07 | python=3.14.6
+2026-06-24 22:43:25 | INFO | P07 | os=Windows 10
+2026-06-24 22:43:25 | INFO | P07 | shell=powershell
+2026-06-24 22:43:25 | INFO | P07 | cwd=.
+2026-06-24 22:43:25 | INFO | P07 | github_actions=False

@@ -1,11 +1,9 @@
 # app_tips_case.py
 
-```python
 """
-
 app_tips_case.py
 
-Author: 
+Author:
 Date: 2026-06
 
 
@@ -65,6 +63,7 @@ pd.set_option("display.width", 120)
 
 # === Section 2. Load Data ===
 
+
 def load_data() -> pd.DataFrame:
     """Load the Tips dataset."""
     LOG.info(f"Loading dataset: {DATASET_NAME}")
@@ -84,7 +83,9 @@ def load_data() -> pd.DataFrame:
 
     return df
 
+
 # === Section 3. Prepare Modeling Data ===
+
 
 def make_model_view(df: pd.DataFrame) -> pd.DataFrame:
     """Remove rows with missing feature or target values."""
@@ -101,7 +102,9 @@ def make_model_view(df: pd.DataFrame) -> pd.DataFrame:
 
     return df_model
 
+
 # === Section 4. Build X and y ===
+
 
 def build_x_and_y(df_model: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
     """Build feature matrix and target vector."""
@@ -114,7 +117,9 @@ def build_x_and_y(df_model: pd.DataFrame) -> tuple[np.ndarray, np.ndarray]:
 
     return X, y
 
+
 # === Section 5. Fit Model ===
+
 
 def fit_line(X: np.ndarray, y: np.ndarray) -> LinearRegression:
     """Fit linear regression model."""
@@ -128,13 +133,13 @@ def fit_line(X: np.ndarray, y: np.ndarray) -> LinearRegression:
     intercept: float = float(model.intercept_)
 
     LOG.info("Regression Equation:")
-    LOG.info(
-        f"{TARGET_COL} = {slope:.6f} * {FEATURE_COL} + {intercept:.6f}"
-    )
+    LOG.info(f"{TARGET_COL} = {slope:.6f} * {FEATURE_COL} + {intercept:.6f}")
 
     return model
 
+
 # === Section 6. Predict ===
+
 
 def predict(model: LinearRegression, X: np.ndarray) -> np.ndarray:
     """Generate fitted values and example prediction."""
@@ -146,13 +151,14 @@ def predict(model: LinearRegression, X: np.ndarray) -> np.ndarray:
     prediction: float = float(model.predict(X_example)[0])
 
     LOG.info(
-        f"Predicted tip for a bill of ${EXAMPLE_FEATURE_VALUE:.2f}: "
-        f"${prediction:.2f}"
+        f"Predicted tip for a bill of ${EXAMPLE_FEATURE_VALUE:.2f}: ${prediction:.2f}"
     )
 
     return y_hat
 
+
 # === Section 7. Evaluate Fit ===
+
 
 def examine_fit(
     model: LinearRegression,
@@ -166,11 +172,7 @@ def examine_fit(
 
     r_squared: float = model.score(X, y)
 
-    rmse: float = float(
-        np.sqrt(
-            np.mean(residuals ** 2)
-        )
-    )
+    rmse: float = float(np.sqrt(np.mean(residuals**2)))
 
     LOG.info("====================")
     LOG.info("MODEL EVALUATION")
@@ -185,7 +187,9 @@ def examine_fit(
 
     return residuals
 
+
 # === Section 8. Create Visualizations ===
+
 
 def make_plots(
     df_model: pd.DataFrame,
@@ -215,9 +219,7 @@ def make_plots(
 
     scatter_plt.set_xlabel(FEATURE_LABEL)
     scatter_plt.set_ylabel(TARGET_LABEL)
-    scatter_plt.set_title(
-        "Total Bill vs Tip Amount with Regression Line"
-    )
+    scatter_plt.set_title("Total Bill vs Tip Amount with Regression Line")
 
     plt.figure(figsize=(10, 6))
 
@@ -234,11 +236,11 @@ def make_plots(
 
     residual_plt.set_xlabel(FEATURE_LABEL)
     residual_plt.set_ylabel("Residuals")
-    residual_plt.set_title(
-        "Residual Plot"
-    )
+    residual_plt.set_title("Residual Plot")
+
 
 # === Section 9. Summary ===
+
 
 def summarize(
     df: pd.DataFrame,
@@ -272,7 +274,9 @@ def summarize(
         "to determine whether a linear model is appropriate."
     )
 
+
 # === Main Function ===
+
 
 def main() -> None:
 
@@ -300,8 +304,8 @@ def main() -> None:
 
     LOG.info("Regression workflow complete")
 
+
 # === Execution Guard ===
 
 if __name__ == "__main__":
     main()
-```
