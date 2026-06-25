@@ -90,3 +90,139 @@ max     50.810000   10.000000
 2026-06-24 23:08:46 | INFO | P07 | shell=powershell
 2026-06-24 23:08:46 | INFO | P07 | cwd=.
 2026-06-24 23:08:46 | INFO | P07 | github_actions=False
+2026-06-24 23:41:51 | INFO | P07 | === RUN START ===
+2026-06-24 23:41:51 | INFO | P07 | project=P07
+2026-06-24 23:41:51 | INFO | P07 | repo_dir=custom-07-regression
+2026-06-24 23:41:51 | INFO | P07 | python=3.14.6
+2026-06-24 23:41:51 | INFO | P07 | os=Windows 10
+2026-06-24 23:41:51 | INFO | P07 | shell=powershell
+2026-06-24 23:41:51 | INFO | P07 | cwd=.
+2026-06-24 23:41:51 | INFO | P07 | github_actions=False
+2026-06-24 23:41:51 | INFO | P07 | === RUN START ===
+2026-06-24 23:41:51 | INFO | P07 | project=REGRESSION
+2026-06-24 23:41:51 | INFO | P07 | repo_dir=custom-07-regression
+2026-06-24 23:41:51 | INFO | P07 | python=3.14.6
+2026-06-24 23:41:51 | INFO | P07 | os=Windows 10
+2026-06-24 23:41:51 | INFO | P07 | shell=powershell
+2026-06-24 23:41:51 | INFO | P07 | cwd=.
+2026-06-24 23:41:51 | INFO | P07 | github_actions=False
+2026-06-24 23:41:51 | INFO | P07 | Starting regression workflow
+2026-06-24 23:41:51 | INFO | P07 | Loading dataset: tips
+2026-06-24 23:41:51 | INFO | P07 | Loaded 244 rows and 7 columns
+2026-06-24 23:41:51 | INFO | P07 | First Five Rows
+2026-06-24 23:41:51 | INFO | P07 | 
+   total_bill   tip     sex smoker  day    time  size
+0       16.99  1.01  Female     No  Sun  Dinner     2
+1       10.34  1.66    Male     No  Sun  Dinner     3
+2       21.01  3.50    Male     No  Sun  Dinner     3
+3       23.68  3.31    Male     No  Sun  Dinner     2
+4       24.59  3.61  Female     No  Sun  Dinner     4
+2026-06-24 23:41:51 | INFO | P07 | Summary Statistics
+2026-06-24 23:41:51 | INFO | P07 | 
+       total_bill         tip
+count  244.000000  244.000000
+mean    19.785943    2.998279
+std      8.902412    1.383638
+min      3.070000    1.000000
+25%     13.347500    2.000000
+50%     17.795000    2.900000
+75%     24.127500    3.562500
+max     50.810000   10.000000
+2026-06-24 23:41:51 | INFO | P07 | Correlation between total_bill and tip: 0.6757
+2026-06-24 23:41:51 | INFO | P07 | Creating modeling view
+2026-06-24 23:41:51 | INFO | P07 | Original rows: 244
+2026-06-24 23:41:51 | INFO | P07 | Model rows: 244
+2026-06-24 23:41:51 | INFO | P07 | Rows dropped: 0
+2026-06-24 23:41:51 | DEBUG | P07 | X shape: (244, 1)
+2026-06-24 23:41:51 | DEBUG | P07 | y shape: (244,)
+2026-06-24 23:41:51 | INFO | P07 | Fitting linear regression model
+2026-06-24 23:41:51 | INFO | P07 | Regression Equation:
+2026-06-24 23:41:51 | INFO | P07 | tip = 0.105025 * total_bill + 0.920270
+2026-06-24 23:41:51 | INFO | P07 | Predicted tip for a bill of $50.00: $6.17
+2026-06-24 23:41:51 | INFO | P07 | ====================
+2026-06-24 23:41:51 | INFO | P07 | MODEL EVALUATION
+2026-06-24 23:41:51 | INFO | P07 | ====================
+2026-06-24 23:41:51 | INFO | P07 | R-squared: 0.4566
+2026-06-24 23:41:51 | INFO | P07 | RMSE: 1.0179
+2026-06-24 23:41:51 | INFO | P07 | Residual Min: -3.1982
+2026-06-24 23:41:51 | INFO | P07 | Residual Max: 3.7434
+2026-06-24 23:41:51 | INFO | P07 | Residual Mean: 0.0000
+2026-06-24 23:41:51 | INFO | P07 | ====================
+2026-06-24 23:41:51 | INFO | P07 | SUMMARY
+2026-06-24 23:41:51 | INFO | P07 | ====================
+2026-06-24 23:41:51 | INFO | P07 | Dataset: tips
+2026-06-24 23:41:51 | INFO | P07 | Feature: total_bill
+2026-06-24 23:41:51 | INFO | P07 | Target: tip
+2026-06-24 23:41:51 | INFO | P07 | Original Rows: 244
+2026-06-24 23:41:51 | INFO | P07 | Model Rows: 244
+2026-06-24 23:41:51 | INFO | P07 | Regression Equation: tip = 0.105025 * total_bill + 0.920270
+2026-06-24 23:41:51 | INFO | P07 | Interpret the R-squared, RMSE, and residual plots to determine whether a linear model is appropriate.
+2026-06-24 23:45:52 | INFO | P07 | Regression workflow complete
+2026-06-24 23:47:14 | INFO | P07 | === RUN START ===
+2026-06-24 23:47:14 | INFO | P07 | project=P07
+2026-06-24 23:47:14 | INFO | P07 | repo_dir=custom-07-regression
+2026-06-24 23:47:14 | INFO | P07 | python=3.14.6
+2026-06-24 23:47:14 | INFO | P07 | os=Windows 10
+2026-06-24 23:47:14 | INFO | P07 | shell=powershell
+2026-06-24 23:47:14 | INFO | P07 | cwd=.
+2026-06-24 23:47:14 | INFO | P07 | github_actions=False
+2026-06-24 23:47:14 | INFO | P07 | === RUN START ===
+2026-06-24 23:47:14 | INFO | P07 | project=REGRESSION
+2026-06-24 23:47:14 | INFO | P07 | repo_dir=custom-07-regression
+2026-06-24 23:47:14 | INFO | P07 | python=3.14.6
+2026-06-24 23:47:14 | INFO | P07 | os=Windows 10
+2026-06-24 23:47:14 | INFO | P07 | shell=powershell
+2026-06-24 23:47:14 | INFO | P07 | cwd=.
+2026-06-24 23:47:14 | INFO | P07 | github_actions=False
+2026-06-24 23:47:14 | INFO | P07 | Starting regression workflow
+2026-06-24 23:47:14 | INFO | P07 | Loading dataset: tips
+2026-06-24 23:47:14 | INFO | P07 | Loaded 244 rows and 7 columns
+2026-06-24 23:47:14 | INFO | P07 | First Five Rows
+2026-06-24 23:47:14 | INFO | P07 | 
+   total_bill   tip     sex smoker  day    time  size
+0       16.99  1.01  Female     No  Sun  Dinner     2
+1       10.34  1.66    Male     No  Sun  Dinner     3
+2       21.01  3.50    Male     No  Sun  Dinner     3
+3       23.68  3.31    Male     No  Sun  Dinner     2
+4       24.59  3.61  Female     No  Sun  Dinner     4
+2026-06-24 23:47:14 | INFO | P07 | Summary Statistics
+2026-06-24 23:47:14 | INFO | P07 | 
+       total_bill         tip
+count  244.000000  244.000000
+mean    19.785943    2.998279
+std      8.902412    1.383638
+min      3.070000    1.000000
+25%     13.347500    2.000000
+50%     17.795000    2.900000
+75%     24.127500    3.562500
+max     50.810000   10.000000
+2026-06-24 23:47:14 | INFO | P07 | Correlation between total_bill and tip: 0.6757
+2026-06-24 23:47:14 | INFO | P07 | Creating modeling view
+2026-06-24 23:47:14 | INFO | P07 | Original rows: 244
+2026-06-24 23:47:14 | INFO | P07 | Model rows: 244
+2026-06-24 23:47:14 | INFO | P07 | Rows dropped: 0
+2026-06-24 23:47:14 | DEBUG | P07 | X shape: (244, 1)
+2026-06-24 23:47:14 | DEBUG | P07 | y shape: (244,)
+2026-06-24 23:47:14 | INFO | P07 | Fitting linear regression model
+2026-06-24 23:47:14 | INFO | P07 | Regression Equation:
+2026-06-24 23:47:14 | INFO | P07 | tip = 0.105025 * total_bill + 0.920270
+2026-06-24 23:47:14 | INFO | P07 | Predicted tip for a bill of $50.00: $6.17
+2026-06-24 23:47:14 | INFO | P07 | ====================
+2026-06-24 23:47:14 | INFO | P07 | MODEL EVALUATION
+2026-06-24 23:47:14 | INFO | P07 | ====================
+2026-06-24 23:47:14 | INFO | P07 | R-squared: 0.4566
+2026-06-24 23:47:14 | INFO | P07 | RMSE: 1.0179
+2026-06-24 23:47:14 | INFO | P07 | Residual Min: -3.1982
+2026-06-24 23:47:14 | INFO | P07 | Residual Max: 3.7434
+2026-06-24 23:47:14 | INFO | P07 | Residual Mean: 0.0000
+2026-06-24 23:47:14 | INFO | P07 | ====================
+2026-06-24 23:47:14 | INFO | P07 | SUMMARY
+2026-06-24 23:47:14 | INFO | P07 | ====================
+2026-06-24 23:47:14 | INFO | P07 | Dataset: tips
+2026-06-24 23:47:14 | INFO | P07 | Feature: total_bill
+2026-06-24 23:47:14 | INFO | P07 | Target: tip
+2026-06-24 23:47:14 | INFO | P07 | Original Rows: 244
+2026-06-24 23:47:14 | INFO | P07 | Model Rows: 244
+2026-06-24 23:47:14 | INFO | P07 | Regression Equation: tip = 0.105025 * total_bill + 0.920270
+2026-06-24 23:47:14 | INFO | P07 | Interpret the R-squared, RMSE, and residual plots to determine whether a linear model is appropriate.
+2026-06-24 23:51:43 | INFO | P07 | Regression workflow complete
