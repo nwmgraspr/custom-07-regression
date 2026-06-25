@@ -8,80 +8,66 @@
 
 ## Project Goal
 
-This project introduces **linear regression**, the process of
-fitting a model to data and using it to make predictions.
+## Restaurant Tips Regression Analysis
 
-Think about two variables that might be related:
+Overview
+This project analyzes whether a restaurant's total bill amount can predict the tip left by customers using simple linear regression.
+Business Question:
+Can the total bill amount be used to predict the tip left by customers?
+Dataset
+•	Source: Seaborn Tips Dataset 
+•	Feature: total_bill 
+•	Target: tip 
 
-- Does study time predict exam scores?
-- Does temperature predict energy usage?
-- Does advertising spend predict revenue?
+## Features
 
-Your goal: run the example, read the code,
-and apply the same approach to a dataset and question of your own choosing.
+•	Loads and explores the Tips dataset 
+•	Calculates correlation between bill amount and tip amount 
+•	Fits a simple linear regression model 
+•	Evaluates model performance using: 
+o	R² (R-squared) 
+o	RMSE (Root Mean Squared Error) 
+o	Residual analysis 
+•	Creates: 
+o	Scatter plot with regression line 
+o	Residual plot 
+•	Predicts tip amount for a sample bill of $50 
 
-For data suggestions, please see [data/raw/README.md](data/raw/README.md).
 
-## Working Files
+## Technologies
 
-You'll work with just these areas:
+•	Python 
+•	Pandas 
+•	NumPy 
+•	Seaborn 
+•	Matplotlib 
+•	Scikit-learn 
 
-- **data/raw** - raw data for exploration
-- **docs/** - project narrative and documentation
-- **src/** - supporting Python package modules
-- **notebooks/** - interactive analysis
-- **pyproject.toml** - update authorship & links
-- **zensical.toml** - update authorship & links
+## Run the Application
 
-## Instructions (pro-analytics-02)
+uv run python -m datafun.app_tips_case
+## Expected Output
 
-Follow the
-[step-by-step workflow guide](https://nwmgraspr.github.io/pro-analytics-02/workflow-b-apply-example-project/)
-to complete:
+The program displays:
+•	Dataset summary statistics 
+•	Correlation between bill and tip 
+•	Regression equation 
+•	Predicted tip amount 
+•	R² and RMSE metrics 
+•	Regression and residual plots 
 
-1. Phase 1. **Start & Run**
-2. Phase 2. **Change Authorship**
-3. Phase 3. **Read & Understand**
-4. Phase 4. **Modify**
-5. Phase 5. **Apply**
+## Learning Objectives
 
-## Challenges
+•	Exploratory Data Analysis (EDA) 
+•	Linear Regression Modeling 
+•	Model Evaluation 
+•	Residual Analysis 
+•	Data Visualization 
 
-Challenges are expected.
-Sometimes instructions may not quite match your operating system.
-When issues occur, share screenshots, error messages, and details about what you tried.
-Working through issues is part of implementing professional projects.
+## Author:
 
-## Success
-
-After completing Phase 1. **Start & Run**, you'll have your own GitHub project,
-running on your machine, and running the example will print out:
-
-```shell
-========================
-Executed successfully!
-========================
-```
-
-A new file `project.log` will appear in the root project folder.
-
-## Command Reference
-
-<details>
-<summary>Show command reference</summary>
-
-### In a machine terminal (open in your `Repos` folder)
-
-After you get a copy of this repo in your own GitHub account,
-open a machine terminal in your `Repos` folder:
-
-```shell
-# Replace username with YOUR GitHub username.
-git clone https://github.com/nwmgraspr/custom-07-regression
-
-cd datafun-07-regression
-code .
-```
+Your Name: Ralph Massaquoi
+June 2026
 
 ### In a VS Code terminal
 
@@ -97,13 +83,6 @@ git add -A
 uvx pre-commit run --all-files
 # repeat if changes were made
 uvx pre-commit run --all-files
-
-# run the penguin example: is there a linear relationship?
-uv run python -m datafun.app_penguins_case
-
-# run the co2 example: is there a linear relationship?
-# the line fits poorly; why?  what would you change?
-uv run python -m datafun.app_co2_case
 
 # do chores
 uv run python -m pyright
@@ -125,13 +104,6 @@ git push -u origin main
 - You do not need to add to or modify `tests/`. They are provided for example only.
 - Many files are silent helpers. Explore as you like, but nothing is required.
 - You do NOT not to understand everything; understanding builds naturally over time.
-
-## Troubleshooting >>>
-
-If you see something like this in your terminal: `>>>` or `...`
-You accidentally started Python interactive mode.
-It happens.
-Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 
 ## Example Output
 
@@ -171,26 +143,10 @@ Press `Ctrl+c` (both keys together) or `Ctrl+Z` then `Enter` on Windows.
 2026-06-25 00:05:33 | INFO | P07 | ========================
 ```
 
-## Findings and Visuals
+## See visual finding below
 
-Take screenshots of your charts and provide them here with a discussion.
-In Markdown, display a figure by using:
-an exclamation mark immediately followed by square brackets containing a useful caption
-immediately followed by parentheses containing the relative path to your figure.
-Note: When you start typing the path with a dot (.) for "here, in this directory",
-the IDE may help complete the path.
 
-In your custom project, discuss these examples, but
-
-- your figures and narrative should reflect your work,
-- this `README.md` should include your commands, process, and visuals, and
-- `docs/index.md` should include your narrative.
-
-Remove unnecessary instructional comments in your custom files.
-
-Update these figures to present interesting results from your custom project:
-
-## Penguins: Is there a linear relationship?
+## Tips: Is there a linear relationship?
 
 ![Provide a Useful Caption](./docs/images/Figure_1.png)
 
@@ -201,17 +157,3 @@ Update these figures to present interesting results from your custom project:
 ![Provide a Useful Caption](./docs/images/Figure_3.png)
 
 ![Provide a Useful Caption](./docs/images/Figure_4.png)
-
-## Project Documentation
-
-Additional instructions, terms, and project notes:
-
-[docs/index.md](docs/index.md)
-
-## Citation
-
-[CITATION.cff](./CITATION.cff)
-
-## License
-
-[MIT](./LICENSE)
