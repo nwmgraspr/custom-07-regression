@@ -1,7 +1,8 @@
 # Restaurant Tips Regression Analysis
 
-**Author:** Ralph Massaquoi
-**Date:** June 2026
+# Author:
+-Ralph Massaquoi
+ Date: June 2026
 
 ## Overview
 
